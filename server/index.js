@@ -6,6 +6,7 @@ require('dotenv/config');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('../client'));
 
 const db = monk(process.env.DB_CONNECTION || 'localhost/meower');
 const tweets = db.get('tweets');

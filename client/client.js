@@ -3,7 +3,8 @@ console.log('Client');
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const tweetsElement = document.querySelector('.tweets');
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:8000/tweet' : 'https://curved-happy-sociology.glitch.me/client/';
+const API_URL = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost')
+ ? 'http://localhost:8000/tweet' : 'https://curved-happy-sociology.glitch.me/client/';
 
 loadingElement.style.display = 'none';
 
