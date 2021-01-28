@@ -12,7 +12,7 @@ const tweets = db.get('tweets');
 const port = process.env.PORT || 8000;
 
 app.listen(8000, ()=> {
-    console.log(`listening on http://localhost:${port}`);
+    console.log(`listening on ${port}`);
 });
 
 function isValidTweet(tweet){
