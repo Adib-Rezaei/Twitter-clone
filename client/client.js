@@ -6,6 +6,8 @@ const tweetsElement = document.querySelector('.tweets');
 const API_URL = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost')
  ? 'http://localhost:8000/tweet' : 'https://twitter-clone-pr.herokuapp.com/tweet';
 
+ console.log("this is API_URL: ", API_URL);
+
 loadingElement.style.display = 'none';
 
 listAlltweets();
@@ -41,7 +43,7 @@ function listAlltweets(){
         .then(response => response.json())
         .then(tweets => {
             console.log(tweets);
-            tweets.reverse();
+            // tweets.reverse();
             tweets.forEach(tweet => {
                 const div = document.createElement('div');
 
