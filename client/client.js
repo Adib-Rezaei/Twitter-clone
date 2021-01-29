@@ -46,6 +46,7 @@ function listAlltweets(){
             // tweets.reverse();
             tweets.forEach(tweet => {
                 const div = document.createElement('div');
+                
 
                 const header = document.createElement('h3');
                 header.textContent = tweet.name;
@@ -58,6 +59,7 @@ function listAlltweets(){
 
                 div.appendChild(header);
                 div.appendChild(contents);
+                div.appendChild(date);
 
                 tweetsElement.appendChild(div);
             });
