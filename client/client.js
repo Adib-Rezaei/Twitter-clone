@@ -4,7 +4,7 @@ const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const tweetsElement = document.querySelector('.tweets');
 const API_URL = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost')
- ? 'http://localhost:8000/tweet' : 'http://twitter-clone-pr.herokuapp.com/tweet';
+ ? 'http://localhost:8000/tweet' : 'https://twitter-clone-pr.herokuapp.com/tweet';
 
  console.log("this is API_URL: ", API_URL);
 
