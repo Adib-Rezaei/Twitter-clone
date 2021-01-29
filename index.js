@@ -12,7 +12,7 @@ const db = monk(process.env.DB_CONNECTION || 'localhost/meower');
 const tweets = db.get('tweets');
 const port = process.env.PORT || 8000;
 
-app.listen(8000, ()=> {
+app.listen(port, ()=> {
     console.log(`listening on ${port}`);
 });
 
