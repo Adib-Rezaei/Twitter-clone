@@ -22,8 +22,8 @@ View the website at http://localhost:8000
 
 
 ## To-do List 
-* [] User account
-  * [] User profile - show only specific user tweets
-  * [] User @mentions
-* [] Give tweets style and fix styling issues
-* [] Add replies, likes to tweets
+* [ ] User account
+  * [ ] User profile - show only specific user tweets
+  * [ ] User @mentions
+* [ ] Give tweets style and fix styling issues
+* [ ] Add replies, likes to tweets
