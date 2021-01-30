@@ -14,6 +14,10 @@ First install dependencies:
 ```markdown
 $ npm i express cors monk
 ```
+Make sure you have mongoDB activated on your local machine by:
+```markdown
+$ sudo systemctl status mongod
+```
 Start the server:
 ```markdown
 $ npm start
